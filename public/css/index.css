@@ -1,0 +1,123 @@
+
+
+
+.html {
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    background-color: rgb(255, 218, 106);
+
+}
+
+
+h1, h2 {
+
+    text-align: center;
+
+}
+
+h3 {
+
+    font-style: italic;
+    /* padding: 0;
+    margin: 0; */
+
+}
+
+
+.subBTN {
+
+    width: 18vw;
+
+
+}
+
+textarea {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.subBTN:hover {
+
+    cursor: pointer;
+
+}
+
+.buttons:hover {
+
+    cursor: pointer;
+
+}
+
+.bigContainer {
+
+    /* background-color: aqua; */
+    /* background-image: url(./pages.jpeg);
+    background-size: cover; */
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    
+    padding: 50px;
+
+
+}
+
+.textarea {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    padding: 3rem;
+
+    border-style: double;
+    border-width: 1rem;
+    border-color: black;
+
+}
+
+.taskList {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1rem;
+
+}
+
+
+#tasks {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+}
+
+.taskContainer {
+
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    border-style: double;
+    border-width: 0.5rem;
+    border-color: black;
+
+}
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker: Gustavo Sepulveda</title>
+    <link href="../public/css/index.css" rel="stylesheet"> 
+</head>
+    <body>
+        <div class="container">
+
+            <h1>Today's Plan</h1>
+
+            <form action="/addtask" method="POST">
+
+                <input
+                    class="newtask"
+                    type="text"
+                    name="newtask"
+                    placeholder="What do I need to do?"/>
+
+            <button>Add Task</button>
+
+
+            <h2>To Do:</h2>
+
+            <!-- JS in order to create a new task-->
+            <!-- Any JS logic written between template tags will not be displayed -->
+            <% for( var i = 0; i < task.length; i++){ %>
+
+            <div class="task">
+                <!-- The "=" sign after the template tag  is what makes the expression within the brackets an output-->
+                <!-- Displaying the newtask task[i], .task displaying only the "task:" part of the JSON object -->
+
+                <input type="text" name="check" value="<%= task[i].task %>" />
+                <button class="edit" formaction="/edittask/<%=task[i].id%>" type="submit">Edit</button>
+
+                <button formaction="/removetask/<%=task[i].id%>" type="submit">Remove</button>
+            <!-- Makes more than one task appear -->
+            </div>
+            <% } %>
+        </form>
+        </div>
+    </body>
+</html>
